@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro | Chicago</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+<!-- PRELOADER -->
+    <div id="preloadcontainer">
+    <div id="preload-content"> 
+      <img src="/assets/images/logo.png">
+    </div>
+    </div>
+<!-- PRELOADER -->
+    <div class="intro-page">
+      <video autoplay muted loop playsinline id="intro-video">
+        <source src="/assets/videos/Introvideo.mp4" type="video/mp4">
+      </video>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-intro">
+              <a href="/"><img src="/assets/images/logo.png" alt="Image Here"></a>
+              <h3>Full Service Event</h3>
+              <h3>Production Company Founded Over 40 Years Ago</h3>
+              <a href="/navigation.html"><button class="btn btn-light explore-btn">Explore Now</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="into-content">
+          <div class="bottom-nav">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pe-0 border-list">
+                <ul>
+                  <li><a href="https://www.facebook.com/ChicagoIsOurKindOfTown" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/chicago_is_our_kind_of_town/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/chicago-is-/about/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="mailto:123456789" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pe-0 border-list">
+                <p>As a full-service Destination Management Company, with over 40 years of experience in the industry, we specialize in creating comprehensive programs for corporate, association and incentive groups traveling inbound to Chicago.</p>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <img src="/assets/images/ultra-logo.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+<script>
+// Preloader Start
+$(document).ready(function () {
+  setTimeout(function () {
+    $('#preload-content').fadeOut(2500, function () {
+      $('#preloadcontainer').fadeOut(2500);
+      setTimeout(function () {
+        $('.fade-in').each(function (index) {
+          $(this).delay(600 * index).animate({
+            top: 0,
+            opacity: 1
+          }, 900);
+        });
+      }, 900);
+    });
+  }, 300);
+});
+// Preloader End
+</script>
