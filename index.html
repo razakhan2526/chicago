@@ -17,6 +17,35 @@
     </div>
     </div>
 <!-- PRELOADER -->
+<!-- START HEADER -->
+    <header>
+      <nav>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="panel-align">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/destination.html" class="active">Destinations</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/aboutus.html">About Us</a></li>
+              <li><a href="/connect.html">Connect</a></li>
+              <li><a href="/blog.html">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="side-social-icon">
+            <ul>
+              <li><a href="https://www.facebook.com/ChicagoIsOurKindOfTown" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/chicago_is_our_kind_of_town/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/chicago-is-/about/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <p><a href="/terms-and-conditions.html">Terms and Conditions</a></p>
+            <p><a href="/cookies.html">Cookies Policy</a></p>
+          </div>
+        </div>
+        <a class="openbtn d-xl-none d-lg-none d-md-none d-sm-block" onclick="openNav()"><img src="/assets/images/toggle.png"></a>
+      </nav>
+    </header>
+    <!-- END HEADER -->
     <div class="intro-page">
       <video autoplay muted loop playsinline id="intro-video">
         <source src="/assets/videos/Introvideo.mp4" type="video/mp4">
@@ -46,7 +75,7 @@
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pe-0 border-list">
                 <p>As a full-service Destination Management Company, with over 40 years of experience in the industry, we specialize in creating comprehensive programs for corporate, association and incentive groups traveling inbound to Chicago.</p>
               </div>
-              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                 <img src="/assets/images/ultra-logo.png">
               </div>
             </div>
@@ -57,24 +86,25 @@
     <script src="/assets/js/jquery-3.6.0.min.js"></script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
 <script>
 // Preloader Start
-$(document).ready(function () {
-  setTimeout(function () {
-    $('#preload-content').fadeOut(2500, function () {
-      $('#preloadcontainer').fadeOut(2500);
-      setTimeout(function () {
-        $('.fade-in').each(function (index) {
-          $(this).delay(600 * index).animate({
-            top: 0,
-            opacity: 1
-          }, 900);
-        });
-      }, 900);
-    });
-  }, 300);
-});
+// $(document).ready(function () {
+//   setTimeout(function () {
+//     $('#preload-content').fadeOut(2500, function () {
+//       $('#preloadcontainer').fadeOut(2500);
+//       setTimeout(function () {
+//         $('.fade-in').each(function (index) {
+//           $(this).delay(600 * index).animate({
+//             top: 0,
+//             opacity: 1
+//           }, 900);
+//         });
+//       }, 900);
+//     });
+//   }, 300);
+// });
 // Preloader End
 </script>

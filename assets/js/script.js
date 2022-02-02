@@ -46,7 +46,7 @@ $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     loop: false,
     margin: 0,
-    nav: false,
+    nav: true,
     pause: false,
     navText: ["<div class='nav-button-1 owl-prev'><i class='fas fa-chevron-left'></i></div>", "<div class='nav-button-2 owl-next'><i class='fas fa-chevron-right'></i></div>"],
     dots: false,
@@ -55,7 +55,7 @@ $(document).ready(function () {
         items: 1,
       },
       600: {
-        items: 3,
+        items: 2,
       },
       575: {
         items: 2,
